@@ -1,0 +1,22 @@
+native_modules: 
+- name: rabbitmq 
+  version: 0.8.0 
+  md5: 51d5827651328236ecb7c60517c701c2 
+  klass: RabbitMQRecipe 
+
+extensions: 
+#standard pecl 
+- name: apcu 
+  version: 4.0.11 
+  md5: 13c0c0dd676e5a7905d54fa985d0ee62 
+  klass: PeclRecipe 
+
+#Oracle client stuff. Not included unless libs are present 
+- name: oci8 
+  version: 2.0.12 
+  md5: 1f189ebda749b403bc53c0bd0ddaf2c1 
+  klass: OraclePeclRecipe 
+- name: pdo_oci 
+  version: nil 
+  md5: nil 
+  klass: OraclePdoRecipe 
